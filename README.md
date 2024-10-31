@@ -8,4 +8,4 @@ Este repositório contém os materiais e códigos do minicurso "Introdução à 
 - Práticas para desenvolver protótipos e primeiros projetos
 
 **Requisitos:**  
-Noções básicas de programação estruturada,POO e conhecimentos iniciais em  programação em C++.
+Noções básicas de programação estruturada, Programação orientada a objetos e conhecimentos iniciais em  programação em C++.
