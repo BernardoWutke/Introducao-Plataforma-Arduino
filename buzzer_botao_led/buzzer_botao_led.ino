@@ -33,7 +33,8 @@ void loop() {
     digitalWrite(pinLed,HIGH);
     
     //toca nota no pinBuzzer tone(pino,frequencia,tempo);
-    tone(pinBuzzer,C,500);
+    //tone(pinBuzzer,C,500);
+    tone(pinBuzzer,C);
   } else{
     //elevar o led para o estado baixo assim ligando ele 
     digitalWrite(pinLed,LOW);
