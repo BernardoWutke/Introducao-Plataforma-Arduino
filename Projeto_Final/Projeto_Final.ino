@@ -7,13 +7,13 @@ LiquidCrystal_I2C lcd(0x27,16,2);
 
 // notas
 
-#define C 262
-#define D 294
-#define E 330
-#define F 349
-#define G 392
-#define A 440
-#define B 494
+#define c 262 //do
+#define d 294 //re
+#define e 330 //mi
+#define f 349 //fa
+#define g 392 //sol
+#define a 440 //la
+#define b 494 //si
 
 // definindo o pino do buzzer
 #define BUZZER 3
@@ -67,37 +67,37 @@ void lcdVoid()
     lcd.setCursor(0, 1);
     lcd.print("C");
     lcd.setCursor(3, 1);
-    lcd.print(String(C) + "Hz");
+    lcd.print(String(c) + "Hz");
   } else if (digitalRead(BOTAO_D) == HIGH){
     lcd.setCursor(0, 1);
     lcd.print("D");
     lcd.setCursor(3, 1);
-    lcd.print(String(D) + "Hz");
+    lcd.print(String(d) + "Hz");
   } else if (digitalRead(BOTAO_E) == HIGH){
     lcd.setCursor(0, 1);
     lcd.print("E");
     lcd.setCursor(3, 1);
-    lcd.print(String(E) + "Hz");
+    lcd.print(String(e) + "Hz");
   } else if (digitalRead(BOTAO_F) == HIGH){
     lcd.setCursor(0, 1);
     lcd.print("F");
     lcd.setCursor(3, 1);
-    lcd.print(String(F) + "Hz");
+    lcd.print(String(f) + "Hz");
   } else if (digitalRead(BOTAO_G) == HIGH){
     lcd.setCursor(0, 1);
     lcd.print("G");
     lcd.setCursor(3, 1);
-    lcd.print(String(G) + "Hz");
+    lcd.print(String(g) + "Hz");
   } else if (digitalRead(BOTAO_A) == HIGH){
     lcd.setCursor(0, 1);
     lcd.print("A");
     lcd.setCursor(3, 1);
-    lcd.print(String(A) + "Hz");
+    lcd.print(String(a) + "Hz");
   } else if (digitalRead(BOTAO_B) == HIGH){
     lcd.setCursor(0, 1);
     lcd.print("B");
     lcd.setCursor(3, 1);
-    lcd.print(String(B) + "Hz");
+    lcd.print(String(b) + "Hz");
   } else {
     lcd.setCursor(0, 1);
     lcd.print("               ");
@@ -111,31 +111,31 @@ void tocarMusica()
 
   if (digitalRead(BOTAO_C) == HIGH)
   {
-    tone(BUZZER, C);
+    tone(BUZZER, c);
   }
   else if (digitalRead(BOTAO_D) == HIGH)
   {
-    tone(BUZZER, D);
+    tone(BUZZER, d);
   }
   else if (digitalRead(BOTAO_E) == HIGH)
   {
-    tone(BUZZER, E);
+    tone(BUZZER, e);
   }
   else if (digitalRead(BOTAO_F) == HIGH)
   {
-    tone(BUZZER, F);
+    tone(BUZZER, f);
   }
   else if (digitalRead(BOTAO_G) == HIGH)
   {
-    tone(BUZZER, G);
+    tone(BUZZER, g);
   }
   else if (digitalRead(BOTAO_A) == HIGH)
   {
-    tone(BUZZER, A);  
+    tone(BUZZER, a);  
   }
   else if (digitalRead(BOTAO_B) == HIGH)
   {
-    tone(BUZZER, B);
+    tone(BUZZER, b);
   }
   else
   {

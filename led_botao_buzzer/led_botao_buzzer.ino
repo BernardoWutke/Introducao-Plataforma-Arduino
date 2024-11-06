@@ -3,13 +3,13 @@
 //#include <Arduino.h> //descomentar caso estiver usando platformio
 
 
-#define C 262
-#define D 294
-#define E 330
-#define F 349
-#define G 392
-#define A 440
-#define B 494
+#define c 262 //do
+#define d 294 //re
+#define e 330 //mi
+#define f 349 //fa
+#define g 392 //sol
+#define a 440 //la
+#define b 494 //si
 
 #define pinLed 4
 #define pinBotao 5
@@ -34,7 +34,7 @@ void loop() {
     
     //toca nota no pinBuzzer tone(pino,frequencia,tempo);
     //tone(pinBuzzer,C,500);
-    tone(pinBuzzer,C);
+    tone(pinBuzzer,c);
   } else{
     //elevar o led para o estado baixo assim ligando ele 
     digitalWrite(pinLed,LOW);
